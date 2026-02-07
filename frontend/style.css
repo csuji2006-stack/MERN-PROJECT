@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #bed4dd, #e44cc3);
+}
+
+/* Registration popup */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #499ca1, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background: linear-gradient(135deg, #dd5c98, #764ba2);
+  padding: 30px;
+  width: 300px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .3);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.logo svg {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.logo:hover svg {
+  transform: scale(1.05) rotate(-6deg);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.15));
+}
+
+.logo.spin svg {
+  animation: logo-spin 1s linear infinite;
+}
+
+@keyframes logo-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.popup input,
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.pw-wrap {
+  position: relative;
+}
+
+.show-pass {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #333;
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.show-pass:focus {
+  outline: 2px solid rgba(123, 75, 179, 0.25);
+}
+
+.small-link {
+  margin-top: 10px;
+}
+
+.small-link a {
+  color: #127aaa;
+  text-decoration: none;
+}
+
+.small-link a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #127aaa;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1a9fa3;
+}
+
+/* Login card */
+.center {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(206, 77, 131, 0.2);
+}
+.body h2{
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background: #217483;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  size-adjust: 50%; 
+  width: 100px;
+  height: 100px;
+  padding-left: 67px;
+
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+/* Welcome */
+.welcome {
+  text-align: left;
+  margin: 20px;
+}
+
+/* Courses */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.course-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+  transition: transform .3s;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+}
+
+.course-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.course-card h3,
+.course-card p {
+  padding: 10px;
+}
+
+footer {
+  background: #1a202c;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.social {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social:hover {
+  color: #f36cbb;
+}
+
+.footer {
+  background: #1a202c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
